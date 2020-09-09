@@ -154,10 +154,9 @@ CORS_ALLOWED_ORIGINS = [
 ]
 REST_USE_JWT=True
 JWT_AUTH_COOKIE='auth'
-ACCOUNT_AUTHENTICATION_METHOD='email'
+ACCOUNT_AUTHENTICATION_METHOD='username'
 ACCOUNT_EMAIL_VERIFICATION="none"
 ACCOUNT_EMAIL_REQUIRED=True
-ACCOUNT_USERNAME_REQUIRED=False
 #reason why this line is here: https://stackoverflow.com/questions/21563227/django-allauth-example-errno-61-connection-refused
 #setup email service later?
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
